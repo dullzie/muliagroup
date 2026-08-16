@@ -1,20 +1,26 @@
 # MULIA GROUP — WhatsApp Preview Final
 
-Static Vercel repository optimized for Open Graph / WhatsApp link previews.
+Repository siap upload ke GitHub dan deploy ke Vercel.
 
-## Files
-- `index.html` — company profile
-- `whatsapp-preview.jpg` — 1200x630 OG image
+## Isi
+- `index.html` — website/company profile
+- `whatsapp-preview.jpg` — gambar preview WhatsApp 1200×630
 - `favicon.png` — favicon
-- `robots.txt` — allows common social crawlers
+- `robots.txt` — crawler rules
 - `sitemap.xml` — sitemap
-- `vercel.json` — cache/crawler-friendly headers
+- `vercel.json` — konfigurasi Vercel/cache
 
 ## Deploy
-1. Upload all files to the root of the GitHub repository.
-2. Import the repository into Vercel.
-3. Deploy.
-4. Test this NEW URL first in WhatsApp:
-   `https://muliagroup.vercel.app/?wa=3`
+1. Upload seluruh isi folder ini ke root repository GitHub.
+2. Pastikan `index.html` berada di root.
+3. Import repository ke Vercel.
+4. Deploy sebagai static site.
 
-The `?wa=3` is only for testing. It makes WhatsApp treat the URL as a new URL and helps bypass an old preview cache. Once the preview is correct, you can test the normal URL again.
+## WhatsApp Preview
+Metadata Open Graph menunjuk ke:
+`https://muliagroup.vercel.app/whatsapp-preview.jpg?v=4`
+
+Setelah deploy, tes dengan URL:
+`https://muliagroup.vercel.app/?wa=4`
+
+Jika WhatsApp masih menampilkan cache lama, gunakan parameter baru pada saat pengujian.
